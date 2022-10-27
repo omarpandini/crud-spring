@@ -1,14 +1,15 @@
 package com.br.crudspring.models;
 
-public class MensagemErro {
+public class Mensagem {
 	
-	private int codigo;
+	private String status;
 	private String descricao;
-	public int getCodigo() {
-		return codigo;
+	
+	public String getCodigo() {
+		return status;
 	}
-	public void setCodigo(int codigo) {
-		this.codigo = codigo;
+	public void setCodigo(String status) {
+		this.status = status;
 	}
 	public String getDescricao() {
 		return descricao;
@@ -17,9 +18,9 @@ public class MensagemErro {
 		this.descricao = descricao;
 	}
 	
-	public MensagemErro(int codigo, String descricao) {
+	public Mensagem(String status, String descricao) {
 		super();
-		this.codigo = codigo;
+		this.status = status;
 		this.descricao = descricao;
 	}
 	
