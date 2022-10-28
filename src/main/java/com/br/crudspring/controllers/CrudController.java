@@ -41,8 +41,6 @@ public class CrudController {
 			orderBy = "nome";
 		}
 		
-		
-		
 		List<Usuario> usuarios = usuarioRepository.findAll(Sort.by(Sort.Direction.ASC,orderBy));
 		return new ResponseEntity<List<Usuario>>(usuarios, HttpStatus.OK);
 	}
